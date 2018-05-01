@@ -1,0 +1,11 @@
+<!-- 
+     FILENAME: _unfollow.html.erb
+     PROJECT: twitter_clone
+     PROGRAMMERS: Jody Markic, Arindm Sharma, Zivojin Pecin, Sean Moulton
+-->
+
+<%= form_for(current_user.active_relationships.find_by(followed_id: @user.id),
+             html: { method: :delete },
+             remote: true) do |f| %>
+  <%= f.submit "Unfollow", class: "btn" %>
+<% end %>

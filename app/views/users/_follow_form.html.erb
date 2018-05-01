@@ -1,0 +1,15 @@
+<!-- 
+     FILENAME: _follow_form.html.erb
+     PROJECT: twitter_clone
+     PROGRAMMERS: Jody Markic, Arindm Sharma, Zivojin Pecin, Sean Moulton
+-->
+
+<% unless current_user?(@user) %>
+  <div id="follow_form">
+  <% if current_user.following?(@user) %>
+    <%= render 'unfollow' %>
+  <% else %>
+    <%= render 'follow' %>
+  <% end %>
+  </div>
+<% end %>

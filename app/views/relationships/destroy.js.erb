@@ -1,0 +1,8 @@
+<!-- 
+     FILENAME: destroy.js.erb
+     PROJECT: twitter_clone
+     PROGRAMMERS: Jody Markic, Arindm Sharma, Zivojin Pecin, Sean Moulton
+-->
+
+$("#follow_form").html("<%= escape_javascript(render('users/follow')) %>");
+$("#followers").html('<%= @user.followers.count %>');

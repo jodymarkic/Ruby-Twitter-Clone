@@ -1,0 +1,16 @@
+<!-- 
+     FILENAME: _micropost_form.html.erb
+     PROJECT: twitter_clone
+     PROGRAMMERS: Jody Markic, Arindm Sharma, Zivojin Pecin, Sean Moulton
+-->
+
+<%= form_for(@micropost) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+  </div>
+  <%= f.submit "Post", class: "btn btn-primary" %>
+  <span class="picture">
+    <%= f.file_field :picture %>
+  </span>
+<% end %>
