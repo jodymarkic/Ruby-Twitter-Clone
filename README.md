@@ -1,0 +1,2 @@
+# Ruby-Twitter-Clone
+This projects server-side is written in Ruby, using the web application framework Rails. It uses a mixture of HTML, SASS &amp; Javascript for its front-end, harnessing libraries like Bootstrap for rescale and styling. This projects seeks to make a browser based twitter clone, supporting signup &amp; login, make microposts, along with the ability to follow &amp; unfollow other users.
